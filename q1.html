@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<link rel="stylesheet" href="css/qusetion.css" type="text/css"/>
+		<title></title>
+		<script type="text/javascript">
+			document.addEventListener('plusready', function() {
+				//console.log("所有plus api都应该在此事件发生后调用，否则会出现plus is undefined。"
+
+			});
+			//声明一个变量，用于保存分数，如果是第一题，需要给score变量赋初值。
+			var score = 0;
+
+			/*function btnA(){
+				score += 20;
+				window.location.href='q2.html?s='+score;
+			}*/
+		</script>
+	</head>
+
+	<body>
+		<p class="quse">1.以下哪个颜色你最喜欢？</p><br />
+		<input class="btn" type="button" value="A.红色" onclick="score+=20;window.location.href='q2.html?s='+score;"><br />
+		<input class="btn" type="button" value="B.彩色" onclick="score+=30;window.location.href='q2.html?s='+score;"><br />
+		<input class="btn" type="button" value="C.蓝色" onclick="score+=40;window.location.href='q2.html?s='+score;"><br />
+		<input class="btn" type="button" value="D.绿色" onclick="score+=10;window.location.href='q2.html?s='+score;">
+	
+		
+	
+	</body>
+
+</html>

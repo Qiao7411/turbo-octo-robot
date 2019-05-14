@@ -1,0 +1,44 @@
+body{
+	
+	background-image:url(../img/4.jpg) ;
+	 background-repeat:no-repeat ;
+	background-size:100% 100%;
+	background-attachment: fixed;
+}
+.title1 {
+	text-align: center;
+	position: relative;
+	top: 15px;
+	font-size: 40px;
+	color: #1670d0;
+}
+
+hr {
+	height: 10px;
+	border: none;
+	border-top: 10px groove skyblue;
+}
+
+#author{
+	float: right;
+	font-size: 13px;
+}
+#preface{
+	text-align: center;
+	font-size: 20px;
+	color: #008005;
+}
+#note{
+	text-align: center;
+	color: #454545;
+	font-size: 15px;
+}
+.start-button{
+	display:block;
+	margin: 0px auto;
+	width: 250px;
+	height: 70px;
+	color: #565656;
+	font-size: 30px;
+	background-color:#ffbba5;
+}

@@ -1,0 +1,24 @@
+body{
+	background-image: url(../img/3.jpg);
+	background-repeat:no-repeat ;
+	background-size:100% 100%;
+	background-attachment: fixed;
+}
+#jx{
+	text-align: center;
+	color: #454545;
+}
+p{
+	font-size: 23px;
+}
+.return{
+	width: 150px;
+	height: 40px;
+	font-size: 30px;
+	background-color: #ff6868;
+	text-align: center;
+	margin: 0px auto;
+}
+a{
+	text-decoration: none;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<link rel="stylesheet" href="css/qusetion.css" type="text/css"/>
+		<title></title>
+		<script type="text/javascript">
+			document.addEventListener('plusready', function() {
+				//console.log("所有plus api都应该在此事件发生后调用，否则会出现plus is undefined。"
+
+			});
+			//获取地址栏转过来的值
+			var url = window.location.href;
+			console.log(url);
+			//字符串的split()方法
+			//将一个字符串按参数字符串分解，分解成为若干个短字符串，这些新字符串构成一个数组
+			var arr = url.split("=");
+			//声明一个变量，保存传过来的参数
+			var score = parseInt(arr[1]);
+			//console.log(arr[1]);
+			
+			function answer(){
+			if(score>=100&&score<=190){
+				console.log("A")
+				window.location.href="aA.html"
+			}else if(score>=200&&score<=240){
+				console.log("B")
+				window.location.href="aB.html"
+			}else if(score>=250&&score<=290){
+				console.log("C")
+				window.location.href="aC.html"
+			}else if(score>=300&&score<=400){
+				console.log("D")
+				window.location.href="aD.html"
+			}
+			}
+			
+		</script>
+		
+		
+	</head>
+
+	<body>
+		<p class="quse">10.你最向往的旅游地点是？</p><br />
+		<input class="btn" type="button" value="A.主题乐园" onclick="score+=40;answer();" ><br />
+		<input class="btn" type="button" value="B.海边" onclick="score+=30;answer();"  ><br />
+		<input class="btn" type="button" value="C.大都市" onclick="score+=20;answer();"  ><br />
+		<input class="btn" type="button" value="D.不同文化的国家" onclick="score+=10;answer();"  ">
+		<input  class="return" type="button" onclick="javascript:history.back(-1);" value="上一题" />
+		
+		
+	</body>
+
+</html>
